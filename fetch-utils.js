@@ -12,3 +12,10 @@ export async function getSpots() {
     return resp.data;
 
 }
+
+export async function getSpotsByID(id){
+    const resp = await client.from('spot_types').select('*').match({ id });
+    console.log('id');
+
+    return resp.data;
+}

@@ -11,7 +11,7 @@ export function renderSpotKind(kindOfSpot) {
     pTag.classList.add('spot-kind');
 
     const img = document.createElement('img');
-    img.src = `./assets/${kindOfSpot.spot}.png`;
+    img.src = `/assets/${kindOfSpot.spot}.png`;
    
     container.append(pTag, img);
     
