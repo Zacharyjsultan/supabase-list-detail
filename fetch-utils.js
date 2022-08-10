@@ -7,6 +7,8 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getSpots() {
     const resp = await client.from('spot_types').select('*');
-    
-    return resp.data();
+    console.log('resp', resp);
+
+    return resp.data;
+
 }

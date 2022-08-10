@@ -33,3 +33,13 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+img {
+    height: 150px;
+    width: 200px;
+    display: block;
+    border: 2px black;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
