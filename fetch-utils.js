@@ -14,7 +14,7 @@ export async function getSpots() {
 }
 
 export async function getSpotsByID(id){
-    const resp = await client.from('spot_types').select('*').match({ id });
+    const resp = await client.from('spot_types').select('*').match({ id }).single();
     console.log('id');
 
     return resp.data;
