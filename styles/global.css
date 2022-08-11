@@ -10,6 +10,7 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-color: black;
 }
 
 header {
@@ -18,10 +19,16 @@ header {
     display: flex;
     align-items: center;
     background-color: var(--header-background);
+    padding: 10px;
+    margin: 10px;
 }
 
 main {
     padding: 20px;
+    background-image: url(../assets/Brick\ -\ Wall.jpeg);
+    background-size: cover;
+    position: relative;
+
 }
 
 footer {
@@ -33,3 +40,13 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+img {
+    height: 150px;
+    width: 200px;
+    display: block;
+    border: 2px black;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
